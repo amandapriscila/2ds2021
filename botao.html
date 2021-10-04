@@ -1,82 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Estilos de botão para se usar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Estilos de botão para se usar</h1>
+  <p>A <b>responsive</b> website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+   
+    <div class="fakeimg" style="height:200px;"></div>
+    
+    <p>.</p>
+    <div class="fakeimg" style="height:60px;"></div><br>
+    <div class="fakeimg" style="height:60px;"></div><br>
+    <div class="fakeimg" style="height:60px;"></div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <center>
+        <h2>Estilos de botão para se usar</h2>
+        
+        
+        
+        
+        <button class="button button1">Básico</button>
+        <button class="button button2">Primário</button>
+        <button class="button button3">Secundário</button>
+        <button class="button button4">Sucesso</button>
+        <button class="button button5">Info</button>
+
+
+         
+        <button class="button button1">Aviso</button>
+        <button class="button button2">Teste Hacktoberfest</button>
+        <button class="button button3">Fale Conosco</button>
+        <button class="button button4">Light</button>
+        <button class="button button5">Dark</button>
+        </div>
+        </center>>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
 <div class="container">
 
 
 
 
-<h2>Estilos de botão para se usar</h2>
 
-
-
-
-<button type="button" 
-class="btn">Básico</button>
-
-
-
-
-<button type="button" 
-class="btn btn-primary">Primário</button>
-
-
-
-
-<button type="button" 
-class="btn btn-secondary">Secundário</button>
-
-
-
-
-<button type="button" 
-class="btn btn-success">Sucesso</button>
-
-
-
-
-<button type="button" 
-class="btn btn-info">Info</button>
-
-
-
-
-<button type="button" 
-class="btn btn-warning">Aviso</button>
-
-
-
-
-<button type="button" 
-class="btn btn-danger">Perigo</button>
-
-
-
-
-<button type="button" 
-class="btn btn-dark">Dark</button>
-
-<button type="button" 
-class="btn btn-light">Light</button>
-
-
-
-
-<button type="button" 
-class="btn btn-link">Link</button>
-
-
-
-
-<button type="button" 
-class="btn btn-link">Teste Hacktoberfest</button>
-
-
-
-
-<button type="button" 
-class="btn btn-link">Link</button>
-
-
-
-
-<button type="button" 
-class="btn btn-link">Fale Conosco</button>
+<div class="footer">
+  <h2>copyright</h2>
 </div>
+
+</body>
+</html>
+
